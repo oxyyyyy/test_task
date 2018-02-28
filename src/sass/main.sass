@@ -59,10 +59,9 @@ body
 	font-family: 'Montserrat', sans-serif
 	height: 200vh
 .sticky-fixed
-	position: fixed
+	position: fixed !important
 	top: 0
 	width: 100%
-	z-index: 100
 
 // Header
 .header__top-header
@@ -76,6 +75,8 @@ body
 .header__nav
 	background-color: #fff
 	box-shadow: 0 5px 20px 0 rgba(0,0,0,0.15)
+	z-index: 50
+	position: relative
 .nav-link
 	font-size: 16px
 	font-weight: 600
@@ -98,3 +99,7 @@ body
 .welcome__text
 	font-weight: 500
 	margin-bottom: 60px
+
+// Bullets section
+#bullets
+	background-color: #fff
