@@ -1,5 +1,5 @@
 // When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
+window.onscroll = function () { myFunction() };
 
 // Get the header
 var header = document.getElementById("header__nav--sticky");
@@ -10,11 +10,16 @@ var sticky = header.offsetTop;
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
+	if (window.pageYOffset >= sticky) {
 		header.classList.add("sticky-fixed");
 		welcomeSection.classList.add("plus-pt");
-  } else {
+	} else {
 		header.classList.remove("sticky-fixed");
 		welcomeSection.classList.remove("plus-pt");
-  }
+	}
 }
+
+// Glide.js init
+$("#Glide").glide({
+	type: "carousel"
+});
