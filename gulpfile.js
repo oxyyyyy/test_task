@@ -53,7 +53,7 @@ gulp.task('scripts', function () {
 
 gulp.task('concatCssTaskLibs', function () {
 	return gulp.src([
-		// 'bower_components/bootstrap/dist/css/bootstrap.min.css',
+		'bower_components/bootstrap/dist/css/bootstrap.css'
 		// 'bower_components/glidejs/dist/css/glide.core.min.css',
 		// 'bower_components/glidejs/dist/css/glide.theme.min.css'
 	])

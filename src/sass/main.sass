@@ -1,0 +1,100 @@
+@import 'fonts'
+@import 'base64'
+@import 'vars'
+
+
+// Typo
+p, a
+	font-size: 18px
+	font-weight: 400
+	line-height: 24px
+	margin: 0
+h2
+	font-size: 30px
+	font-weight: 800
+	color: #000
+// Buttons
+.btn-default
+	padding: 20px 35px
+	background-color: $accent-color
+	color: #fff
+	font-weight: 600
+	display: inline-flex
+	justify-content: center
+	align-items: center
+	transition: $trans-prop
+	&:hover
+		color: #fff
+		text-decoration: none
+		box-shadow: 0 0 20px 0 rgba(0,0,0,0.15)
+		.btn-default__big-circle
+			font-size: 6px
+			opacity: 1
+		.btn-default__medium-circle
+			font-size: 8px
+			opacity: .8
+		.btn-default__small-circle
+			font-size: 10px
+			opacity: .6
+	.fa-circle
+		margin: 0 3px
+		margin-bottom: -2px
+		transition: $trans-prop
+.btn-default__circle-container
+	display: inline-flex
+	justify-content: center
+	align-items: center
+	margin: 0 5px
+.btn-default__big-circle
+	font-size: 10px
+	opacity: .6
+.btn-default__medium-circle
+	font-size: 8px
+	opacity: .8
+.btn-default__small-circle
+	font-size: 6px
+
+// Main styles
+body
+	font-family: 'Montserrat', sans-serif
+	height: 200vh
+.sticky-fixed
+	position: fixed
+	top: 0
+	width: 100%
+	z-index: 100
+
+// Header
+.header__top-header
+	background-image: $header__top-header_base64bg
+.top-header__text
+	font-weight: 600
+	color: #fff
+	margin: 30px 0
+	&:first-child
+		margin-right: 90px
+.header__nav
+	background-color: #fff
+	box-shadow: 0 5px 20px 0 rgba(0,0,0,0.15)
+.nav-link
+	font-size: 16px
+	font-weight: 600
+	color: #111111
+	padding: 12px 20px
+	transition: $trans-prop
+	&:hover
+		color: $accent-color
+	&:last-child
+		padding-right: 0
+
+// Welcome section
+#welcome
+	padding-top: 130px
+	background-color: #fafbff
+.welcome__title
+	font-size: 38px
+	color: #222
+	margin-bottom: 40px
+.welcome__text
+	font-weight: 500
+	margin-bottom: 60px

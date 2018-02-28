@@ -1,0 +1,17 @@
+{
+  "name": "test_task",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "Alexandr Vlasenko <olexandr.vlasenko@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/oxyyyyy/test_task",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
