@@ -26,5 +26,6 @@ This is my test task from Novedo.marketing
 * Bug with header button
 
 Adaptive from 320px
+docs = dist
 
 **Thank you!** :v:
