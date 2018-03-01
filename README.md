@@ -28,4 +28,8 @@ This is my test task from Novedo.marketing
 Adaptive from 320px
 docs = dist
 
+### Google Page Insights
+![page-speed-desktop](https://ibb.co/jzG40x)
+![page-speed-mobile](https://ibb.co/hMScLx)
+
 **Thank you!** :v:
