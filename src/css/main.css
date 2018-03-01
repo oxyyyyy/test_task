@@ -46,8 +46,12 @@ h3 {
     color: #fb5367; }
 
 .bullets-list {
-  list-style: none;
-  margin-bottom: 50px; }
+  list-style: none; }
+
+#Glide2 {
+  height: auto; }
+  #Glide2 .glide__wrapper {
+    margin-bottom: 50px; }
 
 .bullets-list__bullet {
   font-size: 16px;
@@ -131,22 +135,49 @@ body {
     .plus-pt {
       padding-top: 56px !important; } }
 
-.glide--horizontal .glide__arrows {
+#Glide .glide__arrows {
   top: initial;
   bottom: 195px;
   width: 14%;
   margin-left: 29%; }
   @media screen and (max-width: 1199px) {
-    .glide--horizontal .glide__arrows {
+    #Glide .glide__arrows {
       width: 15%; } }
   @media screen and (max-width: 991px) {
-    .glide--horizontal .glide__arrows {
+    #Glide .glide__arrows {
       width: 100%;
       margin-left: initial;
       bottom: 200px; } }
   @media screen and (max-width: 767px) {
-    .glide--horizontal .glide__arrows {
+    #Glide .glide__arrows {
       bottom: 160px; } }
+
+@media screen and (max-width: 991px) {
+  #Glide2 {
+    margin-top: 30px; } }
+
+#Glide2 .glide__arrows {
+  top: -30px;
+  width: 162px;
+  margin-left: -12px; }
+
+#Glide2 .glide__bullets {
+  top: -44px;
+  bottom: initial;
+  margin-left: 35px;
+  text-align: left; }
+
+#Glide2 .glide__bullet {
+  background-color: #333; }
+
+#Glide2 .glide__bullet.active {
+  background-color: #fb5367; }
+
+#Glide2 .glide__bullets > :focus, #Glide2 .glide__bullets > :hover {
+  border: 2px solid transparent; }
+
+#Glide2 .glide__bullets > :focus {
+  margin: 0 5px; }
 
 .glide__arrow {
   font-size: 14px;

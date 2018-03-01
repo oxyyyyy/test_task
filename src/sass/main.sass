@@ -48,7 +48,10 @@ h3
 		color: $accent-color
 .bullets-list
 	list-style: none
-	margin-bottom: 50px
+#Glide2
+	height: auto
+	.glide__wrapper
+		margin-bottom: 50px
 .bullets-list__bullet
 	font-size: 16px
 	color: #333
@@ -126,19 +129,40 @@ body
 		padding-top: 56px !important
 
 // Glide slider
-.glide--horizontal .glide__arrows
-	top: initial
-	bottom: 195px
-	width: 14%
-	margin-left: 29%
-	@media screen and (max-width: 1199px)
-		width: 15%
+#Glide
+	.glide__arrows
+		top: initial
+		bottom: 195px
+		width: 14%
+		margin-left: 29%
+		@media screen and (max-width: 1199px)
+			width: 15%
+		@media screen and (max-width: 991px)
+			width: 100%
+			margin-left: initial
+			bottom: 200px
+		@media screen and (max-width: 767px)
+			bottom: 160px
+#Glide2
 	@media screen and (max-width: 991px)
-		width: 100%
-		margin-left: initial
-		bottom: 200px
-	@media screen and (max-width: 767px)
-		bottom: 160px
+		margin-top: 30px
+	.glide__arrows
+		top: -30px
+		width: 162px
+		margin-left: -12px
+	.glide__bullets
+		top: -44px
+		bottom: initial
+		margin-left: 35px
+		text-align: left
+	.glide__bullet
+		background-color: #333
+	.glide__bullet.active
+		background-color: $accent-color
+	.glide__bullets>:focus, .glide__bullets>:hover
+		border: 2px solid transparent
+	.glide__bullets>:focus
+		margin: 0 5px
 .glide__arrow
 	font-size: 14px
 	font-weight: 600
