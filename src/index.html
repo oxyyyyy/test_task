@@ -20,40 +20,46 @@
 
 	<header>
 		<div class="header__top-header">
-			<div class="container d-flex flex-row justify-content-end align-items-center">
+			<div class="container d-flex flex-row justify-content-center justify-content-sm-end align-items-center">
 				<p class="top-header__text">Звоните
 					<br>000-000-00-00</p>
 				<p class="top-header__text">Без выходных
 					<br>с 9:00 до 23:00</p>
 			</div>
 		</div>
-		<nav id="header__nav--sticky" class="header__nav">
+
+		<nav id="header__nav--sticky" class="header__nav navbar navbar-expand-lg navbar-light">
 			<div class="container">
-				<ul class="nav justify-content-end">
-					<li class="nav-item">
-						<a class="nav-link" href="#">Домашний персонал</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Персонал для детей</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Отзывы</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Интересное</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Вакансии</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Контакты</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Контакты</a>
-					</li>
-				</ul>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				 aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Домашний персонал</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Персонал для детей</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Отзывы</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Интересное</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Вакансии</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Контакты</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
+
 	</header>
 
 	<section id="welcome">
@@ -62,8 +68,11 @@
 			<div id="Glide" class="glide">
 
 				<div class="glide__arrows">
-					<button class="glide__arrow prev" data-glide-dir="<"><i class="fas fa-arrow-left"></i>Пред</button>
-					<button class="glide__arrow next" data-glide-dir=">">След<i class="fas fa-arrow-right"></i></button>
+					<button class="glide__arrow prev" data-glide-dir="<">
+						<i class="fas fa-arrow-left"></i>Пред</button>
+					<button class="glide__arrow next" data-glide-dir=">">След
+						<i class="fas fa-arrow-right"></i>
+					</button>
 				</div>
 
 				<div class="glide__wrapper">
@@ -86,7 +95,9 @@
 											<i class="btn-default__small-circle fas fa-circle"></i>
 										</div>
 									</a>
-									<a href="#bullets" class="more-link">Узнать еще<i class="fas fa-arrow-down"></i></a>
+									<a href="#bullets" class="more-link">Узнать еще
+										<i class="fas fa-arrow-down"></i>
+									</a>
 								</div>
 								<div class="col-lg-7">
 									<img src="img/welcome.png" class="welcome__img img-fluid" alt="">
@@ -111,7 +122,9 @@
 											<i class="btn-default__small-circle fas fa-circle"></i>
 										</div>
 									</a>
-									<a href="#bullets" class="more-link">Узнать еще<i class="fas fa-arrow-down"></i></a>
+									<a href="#bullets" class="more-link">Узнать еще
+										<i class="fas fa-arrow-down"></i>
+									</a>
 								</div>
 								<div class="col-lg-7">
 									<img src="img/welcome.png" class="welcome__img img-fluid" alt="">
@@ -136,7 +149,9 @@
 											<i class="btn-default__small-circle fas fa-circle"></i>
 										</div>
 									</a>
-									<a href="#bullets" class="more-link">Узнать еще<i class="fas fa-arrow-down"></i></a>
+									<a href="#bullets" class="more-link">Узнать еще
+										<i class="fas fa-arrow-down"></i>
+									</a>
 								</div>
 								<div class="col-lg-7">
 									<img src="img/welcome.png" class="welcome__img img-fluid" alt="">
@@ -160,22 +175,24 @@
 				<div class="col-lg-6">
 					<h3>Зачем нанимают нянь?</h3>
 					<ul class="bullets-list">
-						<li class="bullets-list__bullet">Мамам и папам нужна помощница, которая заберет ребенка из детского садика или школы домой, поможет ему с домашним заданием, посещением спортивных занятий и прочими важными детскими делами.</li>
+						<li class="bullets-list__bullet">Мамам и папам нужна помощница, которая заберет ребенка из детского садика или школы домой, поможет ему с домашним заданием,
+							посещением спортивных занятий и прочими важными детскими делами.</li>
 						<li class="bullets-list__bullet">Ребенку требуется хороший педагог, который подготовит его к учебному году или экзаменам.</li>
-						<li class="bullets-list__bullet">Всей семье необходима поддержка чудесной Мэрри Поппинс, сочетающей в себе безукоризненную дисциплину и искреннюю любовь к детям.</li>
+						<li class="bullets-list__bullet">Всей семье необходима поддержка чудесной Мэрри Поппинс, сочетающей в себе безукоризненную дисциплину и искреннюю любовь
+							к детям.</li>
 					</ul>
 					<a href="#" class="btn-default">
-							<div class="btn-default__circle-container">
-								<i class="btn-default__small-circle fas fa-circle"></i>
-								<i class="btn-default__medium-circle fas fa-circle"></i>
-								<i class="btn-default__big-circle fas fa-circle"></i>
-							</div>Узнать больше
-							<div class="btn-default__circle-container">
-								<i class="btn-default__big-circle fas fa-circle"></i>
-								<i class="btn-default__medium-circle fas fa-circle"></i>
-								<i class="btn-default__small-circle fas fa-circle"></i>
-							</div>
-						</a>
+						<div class="btn-default__circle-container">
+							<i class="btn-default__small-circle fas fa-circle"></i>
+							<i class="btn-default__medium-circle fas fa-circle"></i>
+							<i class="btn-default__big-circle fas fa-circle"></i>
+						</div>Узнать больше
+						<div class="btn-default__circle-container">
+							<i class="btn-default__big-circle fas fa-circle"></i>
+							<i class="btn-default__medium-circle fas fa-circle"></i>
+							<i class="btn-default__small-circle fas fa-circle"></i>
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>

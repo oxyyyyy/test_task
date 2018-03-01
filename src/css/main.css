@@ -28,14 +28,17 @@ h3 {
 
 .more-link {
   display: block;
-  margin-top: 80px;
+  margin-top: 140px;
   font-size: 14px;
   font-weight: 600;
   color: #333;
   transition: 0.2s; }
   @media screen and (max-width: 1199px) {
     .more-link {
-      margin-top: 20px; } }
+      margin-top: 81px; } }
+  @media screen and (max-width: 991px) {
+    .more-link {
+      margin-top: 30px; } }
   .more-link .fa-arrow-down {
     margin-left: 5px; }
   .more-link:hover {
@@ -76,6 +79,9 @@ h3 {
   justify-content: center;
   align-items: center;
   transition: 0.2s; }
+  @media screen and (max-width: 400px) {
+    .btn-default {
+      font-size: 14px; } }
   .btn-default:hover {
     color: #fff;
     text-decoration: none;
@@ -121,19 +127,26 @@ body {
 
 .plus-pt {
   padding-top: 48px !important; }
+  @media screen and (max-width: 991px) {
+    .plus-pt {
+      padding-top: 56px !important; } }
 
 .glide--horizontal .glide__arrows {
   top: initial;
-  bottom: 170px;
+  bottom: 195px;
   width: 14%;
-  margin-left: 36%; }
+  margin-left: 29%; }
   @media screen and (max-width: 1199px) {
     .glide--horizontal .glide__arrows {
       width: 15%; } }
   @media screen and (max-width: 991px) {
     .glide--horizontal .glide__arrows {
       width: 100%;
-      margin-left: initial; } }
+      margin-left: initial;
+      bottom: 200px; } }
+  @media screen and (max-width: 767px) {
+    .glide--horizontal .glide__arrows {
+      bottom: 160px; } }
 
 .glide__arrow {
   font-size: 14px;
@@ -159,21 +172,33 @@ body {
   margin: 30px 0; }
   .top-header__text:first-child {
     margin-right: 90px; }
+    @media screen and (max-width: 575px) {
+      .top-header__text:first-child {
+        margin-right: 50px; } }
+  @media screen and (max-width: 575px) {
+    .top-header__text {
+      font-size: 14px; } }
 
 .header__nav {
   background-color: #fff;
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15);
   z-index: 50;
   position: relative; }
+  @media screen and (min-width: 992px) {
+    .header__nav {
+      padding: 0; } }
 
 .nav-link {
   font-size: 16px;
   font-weight: 600;
-  color: #111111;
-  padding: 12px 20px;
+  color: #111 !important;
+  padding: 12px 20px !important;
   transition: 0.2s; }
+  @media screen and (max-width: 1199px) {
+    .nav-link {
+      padding: 12px 15px !important; } }
   .nav-link:hover {
-    color: #fb5367; }
+    color: #fb5367 !important; }
   .nav-link:last-child {
     padding-right: 0; }
 
@@ -193,14 +218,27 @@ body {
 .welcome__text {
   font-weight: 500;
   margin-bottom: 60px; }
+  @media screen and (max-width: 1199px) {
+    .welcome__text {
+      margin-bottom: 40px; } }
 
 #bullets {
   background-color: #fff;
   box-shadow: 0 -5px 20px 0 rgba(0, 0, 0, 0.15);
   padding-top: 50px;
   padding-bottom: 50px;
-  margin-top: -140px;
+  margin-top: -155px;
   position: relative;
   z-index: 30; }
+  @media screen and (max-width: 991px) {
+    #bullets {
+      margin-top: -170px; } }
+  @media screen and (max-width: 767px) {
+    #bullets {
+      margin-top: -140px; } }
   #bullets .section-title {
     margin-bottom: 50px; }
+
+@media screen and (max-width: 991px) {
+  .bullets__img {
+    margin-bottom: 30px; } }
