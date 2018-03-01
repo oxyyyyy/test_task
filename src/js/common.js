@@ -21,5 +21,6 @@ function myFunction() {
 
 // Glide.js init
 $("#Glide").glide({
-	type: "carousel"
+	type: "carousel",
+	autoplay: false
 });

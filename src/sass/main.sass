@@ -23,6 +23,49 @@ p, a
 		width: 4px
 		height: 80%
 		background-color: $accent-color
+h3
+	font-size: 20px
+	font-weight: 700
+	margin-bottom: 25px
+	color: #000
+.more-link
+	display: block
+	margin-top: 80px
+	font-size: 14px
+	font-weight: 600
+	color: #333
+	transition: $trans-prop
+	@media screen and (max-width: 1199px)
+		margin-top: 20px
+	.fa-arrow-down
+		margin-left: 5px
+	&:hover
+		text-decoration: none
+		color: $accent-color
+.bullets-list
+	list-style: none
+	margin-bottom: 50px
+.bullets-list__bullet
+	font-size: 16px
+	color: #333
+	margin-bottom: 25px
+	position: relative
+	&:last-child
+		margin-bottom: 0
+	&:before
+		content: ''
+		background-image: url('../img/check-mark-red.png')
+		background-size: 25px 20px
+		width: 25px
+		height: 20px
+		position: absolute
+		left: -40px
+	&:nth-child(even)
+		&:before
+			background-image: url('../img/check-mark-yellow.png')
+			background-size: 25px 20px
+			width: 25px
+			height: 20px
 // Buttons
 .btn-default
 	padding: 20px 35px
@@ -67,13 +110,38 @@ p, a
 // Main styles
 body
 	font-family: 'Montserrat', sans-serif
-	height: 200vh
 .sticky-fixed
 	position: fixed !important
 	top: 0
 	width: 100%
 .plus-pt
-	padding-top: 148px !important
+	padding-top: 48px !important
+
+// Glide slider
+.glide--horizontal .glide__arrows
+	top: initial
+	bottom: 170px
+	width: 14%
+	margin-left: 36%
+	@media screen and (max-width: 1199px)
+		width: 15%
+	@media screen and (max-width: 991px)
+		width: 100%
+		margin-left: initial
+.glide__arrow
+	font-size: 14px
+	font-weight: 600
+	color: #333
+	text-transform: none
+	border: none
+	z-index: 25
+	transition: $trans-prop
+	.fa-arrow-left
+		margin-right: 5px
+	.fa-arrow-right
+		margin-left: 5px
+	&:hover
+		color: $accent-color
 
 // Header
 .header__top-header
@@ -102,17 +170,18 @@ body
 
 // Welcome section
 #welcome
-	padding-top: 100px
 	background-color: #fafbff
 .welcome__title
 	font-size: 38px
 	color: #222
+	margin-top: 100px
 	margin-bottom: 40px
+	@media screen and (max-width: 1199px)
+		font-size: 30px
+		margin-top: 50px
 .welcome__text
 	font-weight: 500
 	margin-bottom: 60px
-.welcome__img
-	margin-top: -130px
 
 // Bullets section
 #bullets
@@ -120,6 +189,8 @@ body
 	box-shadow: 0 -5px 20px 0 rgba(0,0,0,0.15)
 	padding-top: 50px
 	padding-bottom: 50px
-	margin-top: -130px
+	margin-top: -140px
 	position: relative
 	z-index: 30
+	.section-title
+		margin-bottom: 50px
