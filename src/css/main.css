@@ -122,7 +122,8 @@ h3 {
   font-size: 6px; }
 
 body {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden; }
 
 .sticky-fixed {
   position: fixed !important;

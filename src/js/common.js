@@ -30,6 +30,11 @@ $("#Glide2").glide({
 	autoplay: false
 });
 
+// WOW.js init
+
+new WOW().init();
+
+
 
 // --- Smooth scroll
 

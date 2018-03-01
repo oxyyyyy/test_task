@@ -44,7 +44,8 @@ gulp.task('scripts', function () {
 		// 'bower_components/jquery/dist/jquery.min.js',
 		// 'node_modules/popper.js/dist/popper.min.js',
 		// 'bower_components/bootstrap/dist/js/bootstrap.min.js',
-		'bower_components/glidejs/dist/glide.min.js'
+		'bower_components/glidejs/dist/glide.min.js',
+		'bower_components/wow/dist/wow.min.js'
 	])
 		.pipe(concat('bundle.libs.min.js'))
 		.pipe(uglify())
@@ -55,7 +56,8 @@ gulp.task('concatCssTaskLibs', function () {
 	return gulp.src([
 		'bower_components/bootstrap/dist/css/bootstrap.css',
 		'bower_components/glidejs/dist/css/glide.core.min.css',
-		'bower_components/glidejs/dist/css/glide.theme.min.css'
+		'bower_components/glidejs/dist/css/glide.theme.min.css',
+		'bower_components/wow/css/libs/animate.css'
 	])
 		.pipe(concatCss('bundle.libs.css'))
 		.pipe(gulp.dest('src/css'));

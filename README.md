@@ -19,6 +19,8 @@ This is my test task from Novedo.marketing
 *Libraries:*
 * Bootstrap 4
 * Glide.js (slider)
+* Animate.css
+* WOW.js
 
 *Editor* - VSCode
 
